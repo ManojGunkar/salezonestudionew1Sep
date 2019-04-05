@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.salesfunnel">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.salesfunnel.app.activities.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenTheme"
+            android:name="com.salesfunnel.app.activities.AppTourActivity"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.app.module.login.LogInActivity"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.app.module.login.ForgotPasswordActivity"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.app.activities.ProfileDetailActivity"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.app.module.login.SignUpActivity"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.app.activities.HomeTabsActivity">
+
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenTheme"
+            android:name="com.salesfunnel.app.module.leads.activities.AddLeadActivity"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.app.activities.HomeActivity"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.CreatePack.CreateAccount"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.app.module.more.activities.SupportActivity"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.app.module.more.activities.SettingActivity"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.app.module.more.activities.NotificationActivity"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.CreatePack.AddLead"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.CreatePack.AddNote"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.CreatePack.AddContact"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.app.module.leads.activities.LeadDetailActivity"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.Details.ContactDetails"/>
+
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.CreatePack.AddDeal"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.Details.AccountDetails">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.CreatePack.AddCallLog">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.CreatePack.AddTask">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenThemeColors"
+            android:name="com.salesfunnel.CreatePack.AddAppointment">
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:navigationIcon="@drawable/left_arrow"
+            android:navigationIcon="@drawable/left_arrow"
+            app:titleTextColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/login_btn_drawable"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:layout_weight="0.9"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+                    <ImageView
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/oldhand"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        android:text="Who war the call with?"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <EditText
+                        android:id="@+id/calluser"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@android:color/black"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Paras Arora"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+
+            <LinearLayout
+                android:weightSum="1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:layout_weight="0.9"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+                    <ImageView
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/sorticon"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        android:text="What type of call is it?"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <Spinner
+                        android:id="@+id/calltype"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@android:color/black"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:layout_weight="0.9"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+                    <ImageView
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/target"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        android:text="Outcome"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <EditText
+                        android:id="@+id/outcometext"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@android:color/black"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Paras Arora"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+
+            <LinearLayout
+                android:weightSum="1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:layout_weight="0.9"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+                    <ImageView
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/notes"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        android:text="Notes"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <EditText
+                        android:id="@+id/noteText"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@android:color/black"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:hint="Enter description"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

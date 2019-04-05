@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FAAB3A</color>
+    <color name="colorPrimaryDark">#D57501</color>
+    <color name="colorAccent">#D57501</color>
+    <color name="tabcolor">#D57501</color>
+    <color name="backgroundColor">#F8F8F8</color>
+    <color name="textDarkGrey">#B4B3B4</color>
+    <color name="lightGrey">#D3D3D3</color>
+    <color name="scale_back">#E3E3E3</color>
+
+    <color name="food">#5A13D8</color>
+    <color name="beach">#1ECF97</color>
+    <color name="park">#9b59b6</color>
+    <color name="shopping">#3498db</color>
+    <color name="arch">#9407EA</color>
+    <color name="adv">#387AD5</color>
+    <color name="history">#CF1111</color>
+    <color name="nature">#9407EA</color>
+    <color name="tab_unselect">#CFCFCF</color>
+    <color name="tab_select">#D57501</color>
+    <color name="count_color">#009efb</color>
+
+    <color name="text_dark_color">#687189</color>
+    <color name="text_light_color">#858fa1</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+</resources>

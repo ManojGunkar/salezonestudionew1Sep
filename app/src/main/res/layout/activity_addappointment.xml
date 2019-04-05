@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:titleTextColor="@android:color/white"
+            android:layout_width="match_parent"
+            app:navigationIcon="@drawable/left_arrow"
+            android:navigationIcon="@drawable/left_arrow"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/login_btn_drawable"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:text="Title"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/titleEdit"
+                android:text="Enter title"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+
+            <TextView
+                android:text="Description"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/descEdit"
+                android:text="Enter Description"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:text="Appointment Date"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:text="From"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/fromdateEdit"
+                android:text="Select Date"
+                android:layout_marginLeft="10dp"
+                android:focusable="false"
+                android:layout_weight="0.3"
+                android:focusableInTouchMode="false"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <EditText
+                android:singleLine="true"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/fromtimeEdit"
+                android:text="Select Time"
+                android:layout_weight="0.7"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+
+            <TextView
+                android:text="To"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <EditText
+                    android:singleLine="true"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/todateEdit"
+                    android:text="Select Date"
+                    android:focusable="false"
+                    android:layout_weight="0.3"
+                    android:focusableInTouchMode="false"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <EditText
+                    android:singleLine="true"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/totimeEdit"
+                    android:text="Select Time"
+                    android:layout_weight="0.7"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </LinearLayout>
+
+            <TextView
+                android:text="Outcome"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/outType"
+                android:text="Select Outcome"
+                android:drawableRight="@drawable/rightarrow"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:text="Where"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/locEdit"
+                android:text="Enter Location"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:text="Related To"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/relateEdit"
+                android:drawableRight="@drawable/rightarrow"
+                android:text="Select Related To"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:text="Attendees"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/collabEdit"
+                android:drawableRight="@drawable/rightarrow"
+                android:text="Select Attendees"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:navigationIcon="@drawable/left_arrow"
+            android:navigationIcon="@drawable/left_arrow"
+            app:titleTextColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/login_btn_drawable"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:weightSum="1"
+
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Name"
+                    android:id="@+id/name"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Owner"
+                    android:id="@+id/ownEdit"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Account Name"
+                    android:id="@+id/accName"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Related Contacts"
+                    android:id="@+id/relateEdit"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Deal value ($)"
+                    android:id="@+id/dealNum"
+                    android:inputType="numberDecimal"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Expected close date"
+                    android:id="@+id/dateEdit"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/login_btn_drawable"
+        android:layout_gravity="bottom"
+        android:id="@+id/addBtn"
+        android:text="Add"
+        android:layout_height="45dp"
+        android:layout_width="match_parent"/>
+</android.support.design.widget.CoordinatorLayout>

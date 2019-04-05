@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:navigationIcon="@drawable/left_arrow"
+            android:navigationIcon="@drawable/left_arrow"
+            app:titleTextColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/login_btn_drawable">
+
+            <ImageView
+                android:id="@+id/iv_add_lead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/check"
+                android:padding="15dp"
+                android:layout_marginRight="10dp"
+                android:tint="@android:color/white" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:text="List Name"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <Spinner
+                android:id="@+id/listSpin"
+                android:layout_marginTop="10dp"
+                android:autofillHints="Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/fname"
+                    android:hint="First Name"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:background="@color/scale_back"
+                android:layout_marginTop="10dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_mname"
+                    android:hint="Middle Name"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:background="@color/scale_back"
+                android:layout_marginTop="10dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_lname"
+                    android:hint="Last Name"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:background="@color/scale_back"
+                android:layout_marginTop="10dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/mobEdit"
+                    android:hint="Mobile"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="10dp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:background="@color/scale_back"
+                android:layout_marginTop="10dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/sp_finalStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Final Status"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColorHint="#D57501"
+                    app:met_floatingLabel="normal" />
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/sp_subStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Sub Status"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:met_floatingLabel="normal" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/dealEdit"
+                    android:hint="Deal Size"
+                    android:inputType="number"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:background="@color/scale_back"
+                android:layout_marginTop="10dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+
+           <!-- <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_ageGroup"
+                    android:hint="Age Group"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </android.support.design.widget.TextInputLayout>-->
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/sp_ageGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age Group"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColorHint="#D57501"
+                app:met_floatingLabel="normal" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/sp_leadSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lead Source"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColorHint="#D57501"
+                app:met_floatingLabel="normal" />
+
+          <!--  <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_leadSource"
+                    android:hint="LeadApi Source"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:background="@color/scale_back"
+                android:layout_marginTop="10dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>-->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/emailEdit"
+                    android:layout_marginTop="10dp"
+                    android:hint="Email"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:background="@color/scale_back"
+                android:layout_marginTop="10dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:hint="Phone Number"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="10dp"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

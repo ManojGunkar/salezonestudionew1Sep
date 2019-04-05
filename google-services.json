@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1051762425737",
+    "firebase_url": "https://salesfunnel-d8733.firebaseio.com",
+    "project_id": "salesfunnel-d8733",
+    "storage_bucket": "salesfunnel-d8733.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051762425737:android:ccb3b3caebf53eb4",
+        "android_client_info": {
+          "package_name": "com.salesfunnel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051762425737-l71qibpuro4cgio15tek0re2oi2rahht.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.salesfunnel",
+            "certificate_hash": "05a84421fd0a26113b3c0608211300204afb1120"
+          }
+        },
+        {
+          "client_id": "1051762425737-fubjs2n6hhaql214isiassrsjj7u18vg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEsbNTUzOTakVFgtA-vThsfIWdpUVnaNg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051762425737-fubjs2n6hhaql214isiassrsjj7u18vg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

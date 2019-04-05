@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Speco Sales</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="stageArray">
+        <item>New</item>
+        <item>Contacted</item>
+        <item>Interested</item>
+        <item>Under review</item>
+        <item>Demo</item>
+        <item>Unqualified</item>
+    </string-array>
+    
+    <string name="server_url">https://leadapidemo.azurewebsites.net/api</string>
+    <string name="show_all_leads">/Lead/all/</string>
+    <string name="user_details">/CrmUser/</string>
+    <string name="login">Login/</string>
+    <string name="lead_details">/Lead/</string>
+    <string name="lead_save">Save</string>
+
+
+    <string name="lead_created">Lead created successfully.</string>
+
+    <string name="error_lead_first_name">First name is required</string>
+    <string name="error_mobile_number">Mobile number should be of 10 digits</string>
+    <string name="error_length_mobile_number">Mobile number should be start with 9,8,7,6</string>
+    <string name="app_expire">Demo is expired.</string>
+    <string name="error_msg_unknown">Some thing went wrong.</string>
+    <string name="retry">Retry</string>
+    <string name="no_data">No Data Found.</string>
+    <string name="error">Oops, something went wrong.</string>
+
+    <string-array name="ageGroupArray">
+        <item>Adults 20-45 years</item>
+        <item>Middle age 46-60 years</item>
+        <item>Senior Citizen > 60 years</item>
+    </string-array>
+
+    <string-array name="leadSourceArray">
+        <item>IVR</item>
+        <item>Linkedin</item>
+        <item>Facebook</item>
+        <item>Google Adwords</item>
+        <item>PPC</item>
+        <item>Magicbricks.com</item>
+    </string-array>
+
+
+    <string name = "required_asterisk"><![CDATA[<font color=\'#cc0029\'>&nbsp*</font>]]></string>
+
+
+</resources>

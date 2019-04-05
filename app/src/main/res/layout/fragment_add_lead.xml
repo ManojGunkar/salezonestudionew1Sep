@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="Please fill personal details"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_next_add_lead"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorAccent"
+            android:text="Next"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            // Provert add here
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_first_name_add_lead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_first_name_add_lead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/text_dark_color"
+                    android:drawablePadding="10dp"
+                    android:focusable="true"
+                    android:hint="First Name"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/input_layout_password"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="14dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_mid_name_add_lead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_mid_name_add_lead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/text_dark_color"
+                    android:drawablePadding="10dp"
+                    android:focusable="true"
+                    android:hint="Middle Name"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/input_layout_password"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="14dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_lname_add_lead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_lname_add_lead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/text_dark_color"
+                    android:drawablePadding="10dp"
+                    android:focusable="true"
+                    android:hint="Last Name"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/input_layout_password"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="14dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/spin_final_status_add_lead"
+                    app:met_floatingLabel="normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:hint="Final Status"
+                    android:spinnerMode="dialog"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColorHint="@color/black" />
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/spin_sub_status_add_lead"
+                    app:met_floatingLabel="normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:hint="Sub Status"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:spinnerMode="dialog"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_org_add_lead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_org_add_lead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/text_dark_color"
+                    android:drawablePadding="10dp"
+                    android:focusable="true"
+                    android:hint="Organization Name"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/input_layout_password"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="14dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_mobile_add_lead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_mobile_add_lead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/text_dark_color"
+                    android:drawablePadding="10dp"
+                    android:focusable="true"
+                    android:hint="Mobile No."
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:nextFocusForward="@+id/input_layout_password"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="14dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/spin_age_add_lead"
+                    app:met_floatingLabel="normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:hint="Age Group"
+                    android:spinnerMode="dialog"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColorHint="@color/black" />
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/spin_sorce_add_lead"
+                    app:met_floatingLabel="normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:hint="Lead Source"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:spinnerMode="dialog"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_email_add_lead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_email_add_lead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/text_dark_color"
+                    android:drawablePadding="10dp"
+                    android:focusable="true"
+                    android:hint="Email"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/input_layout_password"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="14dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_password_add_lead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/et_password_add_lead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/text_dark_color"
+                    android:drawablePadding="10dp"
+                    android:hint="Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="14dp" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

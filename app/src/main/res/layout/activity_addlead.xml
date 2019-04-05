@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:navigationIcon="@drawable/left_arrow"
+            android:navigationIcon="@drawable/left_arrow"
+            app:titleTextColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/login_btn_drawable">
+
+            <ImageView
+                android:id="@+id/iv_add_lead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/check"
+                android:padding="15dp"
+                android:layout_marginRight="10dp"
+                android:tint="@android:color/white" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:text="List Name"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <Spinner
+            android:id="@+id/listSpin"
+            android:layout_marginTop="10dp"
+            android:autofillHints="Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/fname"
+                android:hint="First Name"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/profile_dummy"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_mname"
+                android:hint="Middle Name"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/profile_dummy"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_last_name"
+                android:hint="Last Name"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/designation"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/orgEdit"
+                android:hint="Organization"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/company"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/emailEdit"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@mipmap/email_black"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/mobEdit"
+                android:hint="Mobile"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/mobile_black"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/countryEdit"
+                android:hint="Country"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/country"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <Button
+            android:id="@+id/moreBtn"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:text="SHOW MORE"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/moreLayout"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/webEdit"
+                android:hint="Website"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/country"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/addr1Edit"
+                android:hint="Address line 1"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/address"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/addr2Edit"
+                android:hint="Address line 2"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/address"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/cityEdit"
+                android:hint="City"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/city"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/stateEdit"
+                android:hint="State"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/state"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/zipEdit"
+                android:hint="ZIP"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/zipcode"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/stageEdit"
+                android:hint="Lead Stage"
+                android:text="Open"
+                android:focusable="false"
+                android:layout_marginTop="10dp"
+                android:focusableInTouchMode="false"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/stage"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/potEdit"
+                android:hint="Lead Potential"
+                android:text="Low"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/potential"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/dealEdit"
+                android:hint="Deal Size"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/deal"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/interestEdit"
+                android:hint="Interested in"
+                android:text="Select Products / Services"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/interest"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/custEdit"
+                android:hint="Customer Group"
+                android:layout_marginTop="10dp"
+                android:text="Individual"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/group"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:background="@color/scale_back"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/noteEdit"
+                android:hint="Notes"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/notepad"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

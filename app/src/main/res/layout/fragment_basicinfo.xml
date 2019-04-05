@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progress_basic_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/ll_info_basic_details"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="Owner"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ownText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="Bharat Arora"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Lead Stage"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/leadText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:text="New"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:text="Department"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/deptText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:text="Sales"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Has Authority"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/authText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Do not disturb"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <TextView
+                    android:id="@+id/dndText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Time Zone"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/zoneText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:text="Arizona"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <TextView
+                    android:id="@+id/locText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:text="604, Beckford , Arizona , USA"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Twitter"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/twitText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:text="bharatarora"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Linkedin"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/linkText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:text="http://www.linkedin.com"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Company Name"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <TextView
+                    android:id="@+id/compText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:text="Tulip"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Company Address"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/compAddrText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:text="calfornia , USA"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Industry Type"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/indText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:text="Insurance"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Company Phone"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/phoneText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:text="503-131-1313"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Source"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/srcText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:text="Organic Search"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Medium"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/medText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:text="Blog"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/scale_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Keyword"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/keyText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:text="B2B Success"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <ImageView
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/logo"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:layout_height="30dp"
+                android:layout_width="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="13sp"
+                    android:gravity="left"
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"/>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textDarkGrey"
+                    android:textSize="11sp"
+                    android:gravity="right"
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black"
+                android:id="@+id/body"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:background="@color/scale_back"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"/>
+</LinearLayout>

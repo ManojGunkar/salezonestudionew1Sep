@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_dashboard"
+            android:checkable="true"
+            android:checked="true"
+            android:title="My Dashboard" />
+
+        <item
+            android:id="@+id/add_lead"
+            android:checkable="true"
+            android:checked="false"
+            android:title="Add Leads" />
+        <item
+            android:id="@+id/my_lead"
+            android:checkable="true"
+            android:checked="false"
+            android:title="My Leads" />
+
+        <item
+            android:id="@+id/open_lead"
+            android:checkable="true"
+            android:checked="false"
+            android:title="Open Leads" />
+
+        <item
+            android:id="@+id/follow_up"
+            android:checkable="true"
+            android:checked="false"
+            android:title="Follow Up" />
+
+        <item
+            android:id="@+id/closed_lead"
+            android:checkable="true"
+            android:checked="false"
+            android:title="Closed Leads" />
+        <item
+            android:id="@+id/cold_lead"
+            android:checkable="true"
+            android:checked="false"
+            android:title="Cold Leads" />
+        <item
+            android:id="@+id/warm_lead"
+            android:checkable="true"
+            android:checked="false"
+            android:title="Warm Leads" />
+
+        <item
+            android:id="@+id/hot_lead"
+            android:checkable="true"
+            android:checked="false"
+            android:title="Hot Leads" />
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_logout"
+            android:orderInCategory="100"
+            android:title="Log out" />
+    </group>
+</menu>

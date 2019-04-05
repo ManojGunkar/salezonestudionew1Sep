@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/textDarkGrey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:fillColor="@android:color/white"
+        app:pageColor="#00000000"
+        app:radius="3dp"
+        android:layout_weight="1"
+        app:slideInterval="3000"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="1dp"/>
+
+    <View
+        android:background="@android:color/white"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="0"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp"
+        android:layout_width="match_parent">
+        <Button
+            android:layout_weight="1"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:background="@drawable/login_btn_drawable"
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="Sign Up"
+            android:layout_margin="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:background="@drawable/login_btn_drawable"
+            android:id="@+id/regBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

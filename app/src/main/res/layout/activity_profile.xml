@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:navigationIcon="@drawable/left_arrow"
+            android:navigationIcon="@drawable/left_arrow"
+            app:titleTextColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/login_btn_drawable"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:background="@drawable/login_btn_drawable"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:text="Y"
+                android:id="@+id/charText"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="35sp"
+                android:background="@drawable/circle_back"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_marginTop="5dp"
+                android:text="Bharat Arora"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:id="@+id/useremail"
+                android:text="arorabharat2011@gmail.com"
+                android:layout_marginTop="5dp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Mobile Number "
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <TextView
+                android:text="9971955583"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_light_color"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+            <View
+                android:background="@color/scale_back"
+                android:layout_marginTop="10dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:text="Address "
+                    android:layout_weight="1.5"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:text="1026,Ithum Tower A block"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/text_light_color"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </LinearLayout>
+            <View
+                android:background="@color/scale_back"
+                android:layout_marginTop="10dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:text="City "
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:text="Noida"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/text_light_color"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </LinearLayout>
+            <View
+                android:background="@color/scale_back"
+                android:layout_marginTop="10dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:text="State "
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:text="UttarPradesh"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/text_light_color"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </LinearLayout>
+            <View
+                android:background="@color/scale_back"
+                android:layout_marginTop="10dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:text="Country "
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:text="India"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/text_light_color"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </LinearLayout>
+            <View
+                android:background="@color/scale_back"
+                android:layout_marginTop="10dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
